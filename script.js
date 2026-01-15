@@ -10,7 +10,7 @@ const cells = document.querySelectorAll('.cell');
 cells.forEach(cell=>{
 	cell.addEventListener('click',()=>{
 		if(this.textContent ===''){
-			this.textContent = currentPlayer.textContent.includes(players.player1)?'x':'o';
+			this.textContent = currentPlayer.textContent.includes(players.player1)?'X':'O';
 			if(currentPlayer.textContent.includes(players.player1)) {
                 currentPlayer.textContent = `${players.player2}, you're up!`;
             } else {
