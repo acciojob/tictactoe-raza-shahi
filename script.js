@@ -2,8 +2,8 @@
 const players = {};
 const usersElement = document.getElementById("users");
 const gameBoardElement = document.getElementById("game-board");
-const user1Input = document.getElementById('player-1');
-const user2Input = document.getElementById('player-2');
+const user1Input = document.getElementById('player1');
+const user2Input = document.getElementById('player2');
 let currentPlayer = document.getElementById('current-player');
 
 document.getElementById('submit').addEventListener('click', function() {
