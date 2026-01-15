@@ -5,6 +5,20 @@ const gameBoardElement = document.getElementById("game-board");
 const user1Input = document.getElementById('player1');
 const user2Input = document.getElementById('player2');
 let currentPlayer = document.getElementById('current-player');
+const cells = document.querySelectorAll('.cell');
+
+cells.forEach(cell=>{
+	cell.addEventListner('click',()=>{
+		if(this.textContent ===''){
+			this.textContent = currentPlayer.textContent.includes(players.player1)?'x':'o';
+			if(currentPlayer.textContent.includes(players.player1)) {
+                currentPlayer.textContent = `${players.player2}, you're up!`;
+            } else {
+                currentPlayer.textContent = `${players.player1}, you're up!`;
+            }
+		}
+	})
+})
 
 document.getElementById('submit').addEventListener('click', function() {
     const user1 = user1Input.value;
