@@ -8,9 +8,9 @@ let currentPlayer = document.getElementById('current-player');
 const cells = document.querySelectorAll('.cell');
 
 cells.forEach(cell=>{
-	cell.addEventListener('click',()=>{
+	cell.addEventListener('click',function (){
 		if(this.textContent ===''){
-			this.textContent = currentPlayer.textContent.includes(players.player1)?'X':'O';
+			this.textContent = currentPlayer.textContent.includes(players.player1)?'x':'o';
 			if(currentPlayer.textContent.includes(players.player1)) {
                 currentPlayer.textContent = `${players.player2}, you're up!`;
             } else {
