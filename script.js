@@ -8,7 +8,7 @@ let currentPlayer = document.getElementById('current-player');
 const cells = document.querySelectorAll('.cell');
 
 cells.forEach(cell=>{
-	cell.addEventListner('click',()=>{
+	cell.addEventListener('click',()=>{
 		if(this.textContent ===''){
 			this.textContent = currentPlayer.textContent.includes(players.player1)?'x':'o';
 			if(currentPlayer.textContent.includes(players.player1)) {
